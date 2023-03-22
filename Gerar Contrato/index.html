@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../src/LogoIcon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>InfoPro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="../src/logoInfoPro.svg" alt="">
+            </div>
+            <ul>
+                <a href="/" >
+                    <li>Principal</li>
+                </a>
+                <a href="../Área da Secretaria/index.html">
+                    <li>Área da Secretaria</li>
+                </a>
+                <a href="https://forms.gle/YMutqVZXg7aizwhD6" target="_blank">
+                    <li>Auditoria</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="titulo">
+            <p>Matrícula de Aluno Bolsista Primeo</p>
+        </section>
+        
+        <section class="container2">
+            <div class="container2-div">
+
+                <p class="bolsa">Olá sr. Orientador, a matrícula do(a) sr. ferlipe para o Aluno(a) Felipe Pereira dos santos foi analizada e liberada para a bolsa do projeto JOVEM PRONTO - IMP. Atualmente o valor da parcela mensal do Aluno é de R$589,90(quinhetos e oitenta e nove reais e noventa centavos)!</p>
+
+                <div>
+                    <p>Nome do titular:</p>
+                    <input type="text" id="nomeTitular" placeholder="Nome do titular">
+                </div>
+                <div>
+                    <p>Número de RG:</p>
+                    <input type="number" name="" id="numeroRG" placeholder="Número de RG">
+                </div>
+                <div>
+                    <p>UF:</p>
+                    <input type="text" id="UF" placeholder="UF">
+                </div>
+                <div>
+                    <p>CPF:</p>
+                    <input type="number" id="CPF" placeholder="CPF">
+                </div>
+                <div>
+                    <p>Data:</p>
+                    <input type="date" id="dataTitular" placeholder="Nome do titular">
+                </div>
+                <div>
+                    <p>Endereço:</p>
+                    <input type="text" id="endereco" placeholder="Endereço">
+                </div>
+                <div>
+                    <p>Número:</p>
+                    <input type="number" name="" id="numeroTitular" placeholder="Número">
+                </div>
+                <div>
+                    <p>Cidade:</p>
+                    <input type="text" id="Cidade" placeholder="Cidade">
+                </div>
+                <div>
+                    <p>Estado:</p>
+                    <input type="text" id="Estado" placeholder="Estado">
+                </div>
+                <div>
+                    <p>CEP:</p>
+                    <input type="number" id="CEP" placeholder="CEP">
+                </div>
+                <div>
+                    <p>Benificiário:</p>
+                    <input type="text" id="benificiario" placeholder="Benificiário">
+                </div>
+                <div>
+                    <p>Parentesco:</p>
+                    <input type="text" id="parentesco" placeholder="Parentesco">
+                </div>
+                <div>
+                    <p>Data:</p>
+                    <input type="text" id="dataBenificario" placeholder="Endereço">
+                </div>
+                <div>
+                    <p>Telefone 01:</p>
+                    <input type="number" id="foneUm" placeholder="Telefone 01">
+                </div>
+                <div>
+                    <p>Telefone 02:</p>
+                    <input type="number" id="foneDois" placeholder="Telefone 02">
+                </div>
+
+                
+            </div>
+        </section>
+        <div id="enviar">
+            <a href="">GERAR CONTRATO</a>
+        </div>
+
+
+        <section id="Parcelas">
+            <div>
+                <p>Insira o códico da vaga do aluno:</p>
+                <input type="number" id="code">
+            </div>
+
+            <div>
+                <p>Insira o novo valor da parcela mensal (EX: 549,90):</p>
+                <input type="text" id="valorParcelaNuber">
+            </div>
+
+            <div>
+                <p>Insira o novo valor da parcela mensal por extenso:</p>
+                <input type="text" id="valorParcelaExtenso">
+            </div>
+
+            <div>
+                <p>Insira a quantidade de parcelas:</p>
+                <input type="text" id="quantidadeParcelas">
+            </div>
+
+            <div>
+                <p>Insira insira a quantidade de parcelas por extenso:</p>
+                <input type="text" id="quantidadeParcelasExtenso">
+            </div>
+
+            <div id="bolsaLiberada">
+                <a href="">LIBERAR BOLSA</a>
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://felipelinkss.web.app/" target="_blank">Felipe P. dos Santos</a></p>
+    </footer>
+</body>
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+        integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+        crossorigin="anonymous"></script>
+</html>

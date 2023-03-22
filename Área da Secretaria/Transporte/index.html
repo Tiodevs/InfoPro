@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../src/LogoIcon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>InfoPro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="../../src/logoInfoPro.svg" alt="">
+            </div>
+            <ul>
+                <a href="/" >
+                    <li>Principal</li>
+                </a>
+                <a href="../../Área da Secretaria/index.html">
+                    <li>Área da Secretaria</li>
+                </a>
+                <a href="https://forms.gle/YMutqVZXg7aizwhD6" target="_blank">
+                    <li>Auditoria</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <img src="../../src/ValeTransporte.png" alt="">
+            <h1>Gerador de Vale Transporte</h1>
+            <h1 id="texto-01">Preencha os campos para gerar o Recibo de VT</h1>
+        </section>
+        <section class="container2">
+            <div class="container2-div">
+
+                <div>
+                    <p>Empregado</p>
+                    <input type="text" id="empregado">
+                </div>
+                <div>
+                    <p>Função</p>
+                    <select id="opcoes">
+                        <option value="Gerente">Gerente</option>
+                        <option value="Sub-gerente">Sub-gerente</option>
+                        <option value="Supervisor Administrativo">Supervisor Administrativo</option>
+                        <option value="Supervisor de Orientação">Supervisor de Orientação</option>
+                        <option value="Orientador(a) Consultivo (a)">Orientador(a) Consultivo (a)</option>
+                        <option value="Operador(a) de Telemarketing">Operador(a) de Telemarketing</option>
+                        <option value="Supervisor de Telemarketing">Supervisor de Telemarketing</option>
+                        <option value="Supervisor de Pesquisa">Supervisor de Pesquisa</option>
+                        <option value="Agente de pesquisa">Agente de pesquisa</option>
+                        <option value="Auxiliar de Secretaria">Auxiliar de Secretaria</option>
+                        <option value="Auxiliar de Cobrança">Auxiliar de Cobrança</option>
+                        <option value="Auxiliar de Serviços Gerais">Auxiliar de Serviços Gerais</option>
+                        <option value="Instrutor(a) de Ensino">Instrutor(a) de Ensino</option>
+                        <option value="Coordenador de Ensino">Coordenador de Ensino</option>
+                        <option value="Analista de Treinamento">Analista de Treinamento</option>
+                        <option value="Monitor de Telemarketing">Monitor de Telemarketing</option>
+                        <option value="Estagiário">Estagiário</option>
+                    </select>
+                </div>
+                <div>
+                    <p>QTD de VT</p>
+                    <input type="number" id="quantidadeVT">
+                </div>
+                <div>
+                    <p>Quantidade de VT por extenso</p>
+                    <input type="text" id="quantidadeVTExtenso">
+                </div>
+                <div>
+                    <p>Data inicial</p>
+                    <input type="date" id="dataInicial">
+                </div>
+                <div>
+                    <p>Data final</p>
+                    <input type="date" id="dataFinal">
+                </div>
+            </div>        
+        </section>
+        <div id="enviar">
+            <a href="">GERAR</a>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://felipelinkss.web.app/" target="_blank">Felipe P. dos Santos</a></p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+        integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+        crossorigin="anonymous"></script>
+</body>
+</html>

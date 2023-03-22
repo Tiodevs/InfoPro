@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,700;0,900;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* Menu de navegação */
+nav {
+    height: 90px;
+
+    padding-left: 190px;
+    padding-right: 190px;
+
+    background-color: #E9E9E9;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 300px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Responsividade dos quadrados */
+@media (max-width: 1080px) {
+    nav {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        height: 125px;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        margin-bottom: 10px;
+    }
+}
+
+main{
+    min-height: 75.5vh;
+}
+
+#iniciarAvaliacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+#iniciarText h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    color: rgb(69, 9, 180);
+}
+#iniciarText p {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+#inputs{
+    margin-bottom: 40px;
+}
+
+#inputs div{
+    margin-top:15px;
+}
+
+#inputs div input{
+    width: 400px;
+    height: 30px;
+}
+
+#proximo{
+    background-color: rgb(69, 9, 180);
+    padding: 15px;
+    border-radius: 15px;
+}
+#proximo a{
+    color: #FFF;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+    width: 100%;
+    min-height: 80px;
+    background-color: #E9E9E9;
+}
+
+footer a{
+    color: rgb(69, 9, 180);
+}
+

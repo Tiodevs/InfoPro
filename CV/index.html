@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../src/LogoIcon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>InfoPro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="../src/logoInfoPro.svg" alt="">
+            </div>
+            <ul>
+                <a href="/" >
+                    <li>Principal</li>
+                </a>
+                <a href="../Área da Secretaria/index.html">
+                    <li>Área da Secretaria</li>
+                </a>
+                <a href="https://forms.gle/YMutqVZXg7aizwhD6" target="_blank">
+                    <li>Auditoria</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Gerador de Currículos</h1>
+            <h1 id="texto-01">Preencha os campos para gerar o seu currículo</h1>
+        </section>
+        <section class="container2">
+            <div class="container2-div">
+                <div>
+                    <p>Nacionalidade</p>
+                    <input type="text" id="nacionalidade">
+                </div>
+                <div>
+                    <p>Estado civil</p>
+                    <input type="text" id="estadoCivil">
+                </div>
+                <div>
+                    <p>Idade</p>
+                    <input type="number" id="idade">
+                </div>
+                <div>
+                    <p>Nome</p>
+                    <input type="text" id="nome">
+                </div>
+                <div>
+                    <p>Email</p>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <p>Contato</p>
+                    <input type="text" id="contato">
+                </div>
+                <div>
+                    <p>Endereço</p>
+                    <input type="text" id="endereco">
+                </div>
+                <div id="textarea">
+                    <div>
+                        <p>Objetivo</p>
+                        <textarea name="" id="objetivo" cols="34" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <p>Formação acadêmica</p>
+                        <textarea name="" id="formacao" cols="34" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <p>Cursos complementares</p>
+                        <textarea name="" id="curso" cols="34" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <p>Experiência</p>
+                        <textarea name="" id="experiencia" cols="34" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>        
+        </section>
+        <div id="enviar">
+            <a href="">GERAR</a>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://felipelinkss.web.app/" target="_blank">Felipe P. dos Santos</a></p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+        integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+        crossorigin="anonymous"></script>
+</body>
+</html>
